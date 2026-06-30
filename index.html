@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="files/noUiSlider/nouislider.min.css?_v=20260630163956">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260630163956">
+   <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
+   <title>Home - Doll House</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__wrapper lock-padding">
+		<div id="header-container" class="n_container header-container">
+			<div class="header__blockLogo">
+				<a href="/">
+					<img src="images/svg/logo.svg" alt="Doll House">
+				</a>
+				<h1 class="name-site">Dollhouse</h1>
+			</div>
+			<div class="header__menu menu">
+				<!--
+					* повинен додаватися клас not-authorized якщо користувач не авторизований,
+					* якщо авторизований блок з класом header__buttons повинен бути повністю відсутнім.
+				-->
+				<div class="menu__body not-authorized">
+					<nav class="menu-topmenu-container">
+						<ul class="menu__list">
+							<li class="menu-item">
+								<a href="#">Top 100</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Contact us</a>
+							</li>
+
+							<!--
+							<li class="menu-item menu-item-has-children">
+								<a href="#">Demo</a>
+								<span class="menu__arrow">
+									<svg width="10" height="10" viewBox="0 0 24 24">
+										<path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" fill="currentColor" />
+									</svg>
+								</span>
+								<ul class="menu__sub-list">
+									<li class="menu-item">
+										<a href="#">Sub menu item 1</a>
+									</li>
+									<li class="menu-item current-menu-item current_page_item">
+										<a href="#">Sub menu item 2</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Sub menu item 3</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Sub menu item 4</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Sub menu item 5</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Sub menu item - Dollhouse Dollhouse Dollhouse Dollhouse</a>
+									</li>
+								</ul>
+							</li>
+							-->
+						
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__right">
+				<div data-da="menu__body, last, 1099" class="header__buttons hidden">
+					<a href="#" class="header__btn login">Login</a>
+					<a href="#" class="header__btn sing-up n_btn">SIGN UP</a>
+				</div>
+				<div class="language-selector">
+					<button class="language-current" aria-haspopup="listbox">
+						En
+						<span class="arrow">
+							<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.833189L11.1564 0L5.9922 4.95143L5.4414 4.42319L5.4444 4.42611L0.856201 0.0269243L0 0.847529C1.2678 2.06362 4.8084 5.45835 5.9922 6.59293C6.8718 5.75023 6.0144 6.57204 12 0.833189Z" fill="black" fill-opacity="0.2"/>
+								<path d="M11.2832 0.828125C6.69189 5.23018 6.42227 5.4874 5.99121 5.90039C4.70708 4.66948 2.06987 2.13969 0.72168 0.84668L0.855469 0.71875L5.09863 4.78711L5.64648 5.3125L5.99219 5.64453L6.33789 5.3125L11.1504 0.697266L11.2832 0.828125Z" stroke="black" stroke-opacity="0.2"/>
+							</svg>
+						</span>
+					</button>
+					<ul class="language-list" role="listbox">
+						<li><a href="/en/" data-lang="en">En</a></li>
+						<li><a href="/fr/" data-lang="fr">Fr</a></li>
+						<li><a href="/uk/" data-lang="uk">Uk</a></li>
+					</ul>
+				</div>
+				<button type="button" class="menu__icon">
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>
+		<main class="main page-home">
+
+			<div class="filter-block">
+				<div class="n_container">
+					<div class="filter-block__wrap-filter">
+						<div class="filter-block__left">
+							<ul class="filter-block__filter">
+								<li class="filter-block__el">
+									<div id="all-filters" class="filter-block__el-header">
+										<span class="filter-block__el-wrap-icon stroke">
+											<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.75 0.75L5.57955 8.45053V14.2259L11.375 17.1136V8.45053L16.2045 0.75H0.75Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
+										</span>
+										All filters
+									</div>
+								</li>
+								<li class="filter-block__el">
+									<div class="filter-block__el-header">
+										<span class="filter-block__el-wrap-icon">
+											<svg style="bottom: 1px;" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_80_418)">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 5.83698C12.433 5.83698 14 7.40398 14 9.33697C14 11.2699 12.433 12.837 10.5 12.837C8.56704 12.837 7 11.2699 7 9.33697C7 7.40398 8.56704 5.83698 10.5 5.83698ZM10.5 7.58697C11.4665 7.58697 12.25 8.37048 12.25 9.33697C12.25 10.3035 11.4665 11.087 10.5 11.087C9.53348 11.087 8.75 10.3035 8.75 9.33697C8.75 8.37048 9.53348 7.58697 10.5 7.58697Z" fill="black" fill-opacity="0.8"/>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M11.2962 20.3583C11.1948 20.4279 11.1142 20.4815 11.0577 20.5184L10.9649 20.5783C10.6809 20.7561 10.3197 20.7564 10.0356 20.5786L9.94219 20.5184C9.88584 20.4815 9.80516 20.4279 9.70384 20.3583C9.50119 20.2191 9.21506 20.0156 8.87329 19.7531C8.19123 19.2292 7.27991 18.4652 6.36589 17.5039C4.56251 15.6073 2.625 12.8129 2.625 9.49605C2.625 7.37156 3.45004 5.33021 4.92459 3.8221C6.39984 2.31332 8.40499 1.46198 10.5 1.46198C12.595 1.46198 14.6001 2.31332 16.0754 3.8221C17.55 5.33021 18.375 7.37156 18.375 9.49605C18.375 12.8129 16.4375 15.6073 14.6341 17.5039C13.7201 18.4652 12.8088 19.2292 12.1267 19.7531C11.7849 20.0156 11.4988 20.2191 11.2962 20.3583ZM10.5 3.21198C12.1181 3.21198 13.6739 3.86916 14.8241 5.04556C15.975 6.22261 16.625 7.82316 16.625 9.49605C16.625 12.1376 15.0625 14.5137 13.3659 16.298C12.5299 17.1772 11.6912 17.881 11.0608 18.3651C10.846 18.5302 10.6562 18.6689 10.5 18.7798C10.3438 18.6689 10.154 18.5302 9.93921 18.3651C9.30877 17.881 8.47009 17.1772 7.63411 16.298C5.93749 14.5137 4.375 12.1376 4.375 9.49605C4.375 7.82316 5.02495 6.22261 6.17593 5.04556C7.32611 3.86916 8.88195 3.21198 10.5 3.21198Z" fill="black" fill-opacity="0.8"/>
+												</g>
+												<defs>
+													<clipPath id="clip0_80_418">
+														<rect width="21" height="21" fill="white" transform="matrix(-1 0 0 1 21 0)"/>
+													</clipPath>
+												</defs>
+											</svg>
+										</span>
+										Cities
+									</div>
+									<div class="filter-block__block">
+										<div class="filter-block__block-top">
+											<h2 class="filter-block__block-title">Cities</h2>
+										</div>
+										<form>
+											<div class="filter-block__block-content">
+												<div class="filter-block__checkboxs two-column custom-checkboxs">
+													<div class="filter-block__wrap-checkbox">
+														<input id="All" type="checkbox">
+														<label for="All">All (3076)</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="North" type="checkbox">
+														<label for="North">North (16)</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="Centre" type="checkbox">
+														<label for="Centre">Centre (215)</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="South" type="checkbox">
+														<label for="South">South (15)</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="East" type="checkbox">
+														<label for="East">East (17)</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="Southeast" type="checkbox">
+														<label for="Southeast">Southeast (11)</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="NewWest" type="checkbox">
+														<label for="NewWest">New West (21)</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="West" type="checkbox">
+														<label for="West">West (9)</label>
+													</div>
+												</div>
+											</div>
+											<div class="filter-block__block-bottom">
+												<input class="n_btn reset" type="reset" value="Reset">
+												<input class="n_btn" type="submit" value="Apply">
+											</div>
+										</form>
+									</div>
+								</li>
+								<li class="filter-block__el">
+									<div class="filter-block__el-header">
+										<span class="filter-block__el-wrap-icon stroke">
+											<svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.1411 2.48913H8.49437M8.49437 2.48913C8.49437 3.44963 7.80093 4.22826 6.94546 4.22826C6.09 4.22826 5.39655 3.44963 5.39655 2.48913M8.49437 2.48913C8.49437 1.52863 7.80093 0.75 6.94546 0.75C6.09 0.75 5.39655 1.52863 5.39655 2.48913M5.39655 2.48913H0.749809M13.1411 8.57609H3.84764M3.84764 8.57609C3.84764 9.53661 3.15419 10.3152 2.29872 10.3152C1.44326 10.3152 0.749809 9.53661 0.749809 8.57609C0.749809 7.61557 1.44326 6.83696 2.29872 6.83696C3.15419 6.83696 3.84764 7.61557 3.84764 8.57609ZM10.0433 14.663H0.749809M10.0433 14.663C10.0433 13.7025 10.7368 12.9239 11.5922 12.9239C12.4476 12.9239 13.1411 13.7025 13.1411 14.663C13.1411 15.6236 12.4476 16.4022 11.5922 16.4022C10.7368 16.4022 10.0433 15.6236 10.0433 14.663Z" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+											</svg>
+										</span>
+										Parameters
+									</div>
+									<div class="filter-block__block parameters">
+										<div class="filter-block__block-top">
+											<h2 class="filter-block__block-title">Parameters</h2>
+										</div>
+										<form>
+
+											<div class="filter-block__block-label">Age</div>
+											<div id="age-slider"></div>
+
+											<div class="filter-block__block-label">Ethnicity</div>
+											<div class="filter-block__checkboxs four-column custom-checkboxs">
+												<div class="filter-block__wrap-checkbox">
+													<input id="Asian" type="checkbox">
+													<label for="Asian">Asian</label>
+												</div>
+												<div class="filter-block__wrap-checkbox">
+													<input id="Latin" type="checkbox">
+													<label for="Latin">Latin</label>
+												</div>
+												<div class="filter-block__wrap-checkbox">
+													<input id="Arabian" type="checkbox">
+													<label for="Arabian">Arabian</label>
+												</div>
+												<div class="filter-block__wrap-checkbox">
+													<input id="Mixed" type="checkbox">
+													<label for="Mixed">Mixed</label>
+												</div>
+												<div class="filter-block__wrap-checkbox">
+													<input id="Caucasian" type="checkbox">
+													<label for="Caucasian">Caucasian</label>
+												</div>
+												<div class="filter-block__wrap-checkbox">
+													<input id="Black" type="checkbox">
+													<label for="Black">Black</label>
+												</div>
+												<div class="filter-block__wrap-checkbox">
+													<input id="Indian" type="checkbox">
+													<label for="Indian">Indian</label>
+												</div>
+											</div>
+											
+											<div class="filter-block__block-label">Height</div>
+											<div id="height-slider"></div>
+
+											<div class="filter-block__block-label">Weight</div>
+											<div id="weight-slider"></div>
+
+											<div class="filter-block__block-label">Breast</div>
+											<div class="filter-block__checkboxs four-column custom-checkboxs">
+												<div class="filter-block__wrap-checkbox">
+													<input id="Silicon" type="checkbox">
+													<label for="Silicon">Silicon</label>
+												</div>
+												<div class="filter-block__wrap-checkbox">
+													<input id="Natural" type="checkbox">
+													<label for="Natural">Natural</label>
+												</div>
+											</div>
+
+											<div class="filter-block__block-bottom">
+												<input class="n_btn reset" type="reset" value="Reset">
+												<input class="n_btn" type="submit" value="Apply">
+											</div>
+
+										</form>
+									</div>
+								</li>
+								<li class="filter-block__el">
+									<div class="filter-block__el-header">
+										<span class="filter-block__el-wrap-icon stroke">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 11.5 16 19" fill="none">
+												<path d="M5.89453 25.2369V29.4869" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M8.42146 27.787H4.21094" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M10.105 19.712C10.105 20.9961 9.59306 22.158 8.76221 23.0037C8.45151 23.32 8.09658 23.5915 7.70776 23.8082C7.04601 24.1769 6.28512 24.387 5.47336 24.387C2.91543 24.387 0.841797 22.2939 0.841797 19.712C0.841797 17.1301 2.91543 15.037 5.47336 15.037C8.03132 15.037 10.105 17.1301 10.105 19.712Z" stroke="black" stroke-opacity="0.8" stroke-width="1.5" />
+												<path d="M9.26367 15.8869L13.4742 12.4869" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M13.4736 15.8869V12.4869" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M10.9473 12.4869H13.4736" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</span>
+										Sex
+									</div>
+									<div class="filter-block__block">
+										<div class="filter-block__block-top">
+											<h2 class="filter-block__block-title">Sex</h2>
+										</div>
+										<form>
+											<div class="filter-block__block-content">
+												<div class="filter-block__checkboxs one-column custom-checkboxs">
+													<div class="filter-block__wrap-checkbox">
+														<input id="Male" type="checkbox">
+														<label for="Male">Male</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="Female" type="checkbox">
+														<label for="Female">Female</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="Trans" type="checkbox">
+														<label for="Trans">Trans</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="Couples" type="checkbox">
+														<label for="Couples">Couples</label>
+													</div>
+												</div>
+											</div>
+											<div class="filter-block__block-bottom">
+												<input class="n_btn reset" type="reset" value="Reset">
+												<input class="n_btn" type="submit" value="Apply">
+											</div>
+										</form>
+									</div>
+								</li>
+								<li class="filter-block__el">
+									<div class="filter-block__el-header">
+										<span class="filter-block__el-wrap-icon">
+											<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M14.8494 1.77309C13.7917 0.639756 12.5972 0 11.2401 0C9.91888 0 8.77049 0.60372 8.00045 1.63248C7.23254 0.602971 6.08909 0 4.76873 0C3.42083 0 2.24636 0.633136 1.16418 1.76797C-0.455591 3.4654 -0.461587 6.60863 1.63025 8.70043C2.0363 9.10648 3.04775 10.1469 4.47488 11.6238C5.15982 12.3326 5.86993 13.0689 6.5792 13.8051C6.82746 14.0628 7.05785 14.3021 7.26455 14.5169C7.47708 14.7378 7.47708 14.7378 7.52427 14.7868C7.78636 15.0593 8.22242 15.0593 8.48454 14.7868C8.5317 14.7378 8.5317 14.7378 8.74423 14.5169C8.95092 14.3021 9.18132 14.0629 9.42958 13.8051C10.1388 13.0689 10.849 12.3327 11.5129 11.6455C12.961 10.1469 13.9725 9.10648 14.3785 8.7004C16.4624 6.61662 16.4476 3.48495 14.8494 1.77309ZM13.4364 7.75833C13.0225 8.17219 12.0097 9.21412 10.5758 10.698C9.89028 11.4074 9.17973 12.1441 8.47002 12.8808C8.30651 13.0506 8.15075 13.2123 8.00442 13.3643C7.85806 13.2123 7.70229 13.0506 7.53879 12.8808C6.82908 12.1441 6.1185 11.4074 5.45404 10.7198C3.99913 9.21412 2.98627 8.17222 2.57241 7.75836C0.998077 6.18403 1.00248 3.86742 2.12829 2.68765C2.98111 1.7933 3.83612 1.33238 4.76873 1.33238C5.94784 1.33238 6.90565 2.03556 7.37959 3.24322C7.60084 3.80697 8.39864 3.80697 8.61988 3.24322C9.09276 2.03828 10.0583 1.33238 11.2401 1.33238C12.1821 1.33238 13.0489 1.79667 13.8755 2.68228C14.9922 3.87851 15.0031 6.19156 13.4364 7.75833Z" fill="black" fill-opacity="0.8"/>
+											</svg>
+										</span>
+										Services
+									</div>
+									<div class="filter-block__block">
+										<div class="filter-block__block-top">
+											<h2 class="filter-block__block-title">Services</h2>
+										</div>
+										<form>
+											<div class="filter-block__block-content">
+												<div class="filter-block__checkboxs four-columns custom-checkboxs">
+													<div class="filter-block__wrap-checkbox">
+														<input id="69Position" type="checkbox">
+														<label for="69Position">69 Position</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="BlowjobwithoutCondom" type="checkbox">
+														<label for="BlowjobwithoutCondom">Blowjob without Condom</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="Bondage" type="checkbox" checked>
+														<label for="Bondage">Bondage</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="69Position2" type="checkbox">
+														<label for="69Position2">69 Position</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="BDSM" type="checkbox">
+														<label for="BDSM">BDSM</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="DeepThroat" type="checkbox">
+														<label for="DeepThroat">Deep Throat</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="DildoPlayorToys" type="checkbox">
+														<label for="DildoPlayorToys">Dildo Play or Toys</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="BDSM2" type="checkbox">
+														<label for="BDSM2">BDSM</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="FullBodySensualMassage" type="checkbox">
+														<label for="FullBodySensualMassage">Full Body Sensual Massage</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="Dirtytalk" type="checkbox">
+														<label for="Dirtytalk">Dirtytalk</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="FrenchKissing" type="checkbox">
+														<label for="FrenchKissing">French Kissing</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="FullBodySensualMassage2" type="checkbox">
+														<label for="FullBodySensualMassage2">Full Body Sensual Massage</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="Bondage2" type="checkbox">
+														<label for="Bondage2">Bondage</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="CuminMouth" type="checkbox">
+														<label for="CuminMouth">Cum in Mouth</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="CumonFace" type="checkbox">
+														<label for="CumonFace">Cum on Face</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="Bondage3" type="checkbox">
+														<label for="Bondage3">Bondage</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="69Position3" type="checkbox">
+														<label for="69Position3">69 Position</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="BlowjobwithoutCondom2" type="checkbox">
+														<label for="BlowjobwithoutCondom2">Blowjob without Condom</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="Bondage4" type="checkbox">
+														<label for="Bondage4">Bondage</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input id="69Position4" type="checkbox">
+														<label for="69Position4">69 Position</label>
+													</div>
+
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+													<div class="filter-block__wrap-checkbox">
+														<input type="checkbox">
+														<label>Test</label>
+													</div>
+												</div>
+											</div>
+											<div class="filter-block__block-bottom">
+												<input class="n_btn reset" type="reset" value="Reset">
+												<input class="n_btn" type="submit" value="Apply">
+											</div>
+										</form>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="filter-block__right">
+							<div class="filter-block__el other-filters selected">Other filters: <span id="filters-selected">0</span></div>
+							<a href="#" class="filter-block__el selected map" target="_blank" rel="noopener noreferrer">
+								<span class="filter-block__el-wrap-icon stroke">
+									<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 10.375H19.75M1 10.375C1 15.5527 5.19733 19.75 10.375 19.75M1 10.375C1 5.19733 5.19733 1 10.375 1M19.75 10.375C19.75 15.5527 15.5527 19.75 10.375 19.75M19.75 10.375C19.75 5.19733 15.5527 1 10.375 1M10.375 19.75C2.82876 11.5 7.23074 3.8125 10.375 1M10.375 19.75C17.9212 11.5 13.5193 3.8125 10.375 1" stroke="black" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</span>
+								View on map
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section-cards">
+				<div class="cards">
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-1.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-2.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-3.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-4.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-5.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-6.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-7.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-8.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-9.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-5.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-10.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-2.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-11.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="images/card-12.jpg" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="block_bg-white">
+
+				<section class="aeh_services">
+					<div class="n_container">
+						<h2 class="n_sec-title">Amsterdam Escort Hotel Service</h2>
+						<div class="aeh_services__desc">
+							<p>Businessmen often think ordering an escort to their hotel is far more difficult than it really is. In fact, in Amsterdam requesting an escort could not be simpler ... and more importantly, it's legal. Below we've addressed some of the main concerns hotels stayers have.</p>
+						</div>
+						<div class="aeh_services__items">
+							<div class="aeh_services__item">
+								<h3 class="aeh_services__item-name">Professional Hotel Service</h3>
+								<p class="aeh_services__item-desc">Our executive service is tailor-made for the business traveler looking for some fun. You don't need to worry about a thing, we'll take care of everything to the finest detail. All you need to do is make the call, and we will do the rest. For a stress-free escort experience just give us a call.</p>
+							</div>
+							<div class="aeh_services__item">
+								<h3 class="aeh_services__item-name">High-Class Amsterdam Escorts</h3>
+								<p class="aeh_services__item-desc">Worried about what other guests will say or what the hotel staff might think? Forget about this, our escorts are discrete, well groomed and behave like any other hotel guest. Most people will have no idea that the girl standing next to them is a high-class escort in Amsterdam.</p>
+							</div>
+							<div class="aeh_services__item">
+								<h3 class="aeh_services__item-name">Flexible Hours</h3>
+								<p class="aeh_services__item-desc">Coming on a business trip will often mean meetings and dinners with clients, restricting your time. At Dollhouse Executive Escorts Amsterdam we provide flexible operating hours starting at 16:00 and ending at 04:00 and our delivery times are within 40 minutes of placing a booking.</p>
+							</div>
+						</div>
+						<div class="aeh_services__bottom">
+							<p>Book an escort now and make your Amsterdam trip count.</p>
+							<a href="#" class="n_btn">Bookings</a>
+						</div>
+					</div>
+				</section>
+
+				<div class="section-cards">
+					<div class="cards">
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<section class="ae_services">
+				<div class="n_container">
+					<h2 class="n_sec-title">Amsterdam Escort Services</h2>
+					<div class="ae_services__desc">
+						<p>Amsterdam escorts are unlike girls found in other countries. Because Amsterdam is the sex capital of Europe, it attracts escorts from many locations. This melting pot provides our customers with a range of escort services that boggles the mind. Unfortunately, most customers are not aware of all these escort services and tend to stick with the popular ones. We at Dollhouse Amsterdam Escorts try to encourage our clients to try new services which will elevate their sexual experiences.</p>
+						<p>Many of our escort services are not solely sex-based instead they are coupled with other companion services. We believe that by combining non-sexual services with traditional escort services our Amsterdam escorts are able to provide a unique and memorable encounter. We don't want our clients to have the same old boring bookings they've had dozens of times before.</p>
+						<p>The Amsterdam escort has far more to give than most people realize. Beauty and sexual attraction is only the tip of the iceberg. Our girls are smart, funny and interesting, they are more than just escorts. But, this you will only discover once you've spent quality time with them, and you can only do this if you try our exciting services</p>
+					</div>
+					<div class="ae_services__items">
+						<div class="ae_services__item">
+							<h3 class="ae_services__item-name">Hotel Escort Amsterdam</h3>
+							<p class="ae_services__item-desc">If you need an escort sent to your hotel, then our Amsterdam Hotel escort service is the ideal package for you. You can have a beautiful girl delivered to your hotel room in as little as 30 minutes.</p>
+						</div>
+						<div class="ae_services__item">
+							<h3 class="ae_services__item-name">Duo Escort Amsterdam</h3>
+							<p class="ae_services__item-desc">The girls that make up our Duo Escort Amsterdam service are team players who like to operate in tandem. They provide a one-of-a-kind experience in which they collaborate with one another to fulfil your deepest desires.</p>
+						</div>
+						<div class="ae_services__item">
+							<h3 class="ae_services__item-name">Couples Escort Amsterdam</h3>
+							<p class="ae_services__item-desc">Our Amsterdam escort couples services provides couples with an amazing way to explorer each other in new and exciting ways that can only be experienced with a third person.</p>
+						</div>
+						<div class="ae_services__item">
+							<h3 class="ae_services__item-name">Kinky Escort Amsterdam</h3>
+							<p class="ae_services__item-desc">Are you looking for a Kinky Escort in Amsterdam. Then look no further than our kinky escort service. We have girls providing unique services, such as bondage, role-playing, spanking and BDSM. </p>
+						</div>
+						<div class="ae_services__item">
+							<h3 class="ae_services__item-name">Amsterdam Escort City Tours</h3>
+							<p class="ae_services__item-desc">Perfect for the lonely traveler in need of some companionship. See Amsterdam with a beautiful escort on your arm who will show you the sites and sounds of the city.</p>
+						</div>
+						<div class="ae_services__item">
+							<h3 class="ae_services__item-name">BDSM Escort Amsterdam</h3>
+							<p class="ae_services__item-desc">If you are searching for Bondage & Discipline, Dominance & Submission, Sadism & Masochism escort service in Amsterdam, then you are at the right place. Let our call girls show you what BDSM in Amsterdam is all about.</p>
+						</div>
+						<div class="ae_services__item">
+							<h3 class="ae_services__item-name">Amsterdam Foot Fetish</h3>
+							<p class="ae_services__item-desc">For those in seek of the best foot fetish service in Amsterdam look no more. Out high-class escorts will parade the gorgeous feet just for you. From sexy nail polish to toe rings, the options are endless.</p>
+						</div>
+						<div class="ae_services__item">
+							<h3 class="ae_services__item-name">Anal Escort Amsterdam</h3>
+							<p class="ae_services__item-desc">Our Anal escort service in Amsterdam is world-famous and every man's dream. Our call girls provide the best A-Level service that is unsurpassed in both quality and client satisfaction. </p>
+						</div>
+						<div class="ae_services__item">
+							<h3 class="ae_services__item-name">Erotic Massage Amsterdam</h3>
+							<p class="ae_services__item-desc">Get the best erotic massage Amsterdam has to offer. Sexy masseuses offer top massages such as Nuru Massage, Tantra Massage and Body to Body Massage.</p>
+						</div>
+						<div class="ae_services__item">
+							<h3 class="ae_services__item-name">Girlfriend Experience Amsterdam</h3>
+							<p class="ae_services__item-desc">Have a romantic girlfriend experience with a Amsterdam escort. If you're looking for a more personal, warm and sensual time then the GFE is perfect for you.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div class="section-cards">
+				<div class="cards">
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+					<div class="cards__card">
+						<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+							<img src="https://placehold.co/255x368" loading="lazy" alt="">
+    						<span class="sk-spinner-pulse"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="block_bg-white without-indents">
+
+				<section class="auestions">
+					<div class="n_container">
+						<h2 class="n_sec-title">Questions</h2>
+						<div class="auestions__desc">
+							<p>Below we have listed some of the frequent questions customers ask when booking an Amsterdam escort</p>
+						</div>
+						<div class="auestions__items">
+							<div class="auestions__item">
+								<h3 class="auestions__item-name">What payment methods do you have?</h3>
+								<p class="auestions__item-desc">We accept both cash and credit cards. However, cash is the prefered method because there is less issue with credit cards being blocked because of foreign travellers.</p>
+							</div>
+							<div class="auestions__item">
+								<h3 class="auestions__item-name">What is your policy regarding booking?</h3>
+								<p class="auestions__item-desc">The general rule of thumb is that once you have the girl, you will be able to<br> extend your booking if you so choose. If a girl has another booking you will be informed before her arrival.</p>
+							</div>
+							<div class="auestions__item">
+								<h3 class="auestions__item-name">What is the procedure if I am not happy<br> with the escort I've ordered?</h3>
+								<p class="auestions__item-desc">Before any sexual acts or removal of clothes, a client can cancel the booking<br> on the spot. In these cases, we do ask that the customer pays for the girl's tax<br> so that she is not out of pocket.</p>
+							</div>
+							<div class="auestions__item">
+								<h3 class="auestions__item-name">Is there any hidden cost when booking<br> escort services?</h3>
+								<p class="auestions__item-desc">No, all our cost are inclusive and clearly stated. The only time you will ever<br> be asked for additional payments is when you choose to add extra services<br> that are not included in the standard hourly rates, for example, anal sex.</p>
+							</div>
+							<div class="auestions__item">
+								<h3 class="auestions__item-name">What is the cancellation procedure<br> when booking an escort?</h3>
+								<p class="auestions__item-desc">No customer is obligated to take a booking. That being said we do ask the customer give us at least 24 hours notice for cancellations.</p>
+							</div>
+							<div class="auestions__item">
+								<h3 class="auestions__item-name">Can I perform any sexual act with your call girls?</h3>
+								<p class="auestions__item-desc">No, each call girl has her set of services she provides. It is therefore essential to choose the girl that provides the services you want. Our friendly phone operators will be able to advise you regarding the services the girls offer.</p>
+							</div>
+							<div class="auestions__item">
+								<h3 class="auestions__item-name">Do I need to provide condoms or gels?</h3>
+								<p class="auestions__item-desc">No, our girls will bring everything they need to perform their job. This includes things like condoms and massage gels.</p>
+							</div>
+							<div class="auestions__item">
+								<h3 class="auestions__item-name">What discount rates are avalaible?</h3>
+								<p class="auestions__item-desc">There are many discounts prices available. Most of these specials relate to extended bookings or multiple hour bookings. The general rule is that the more hours you book, the cheaper the hourly rate becomes.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="section-cards">
+					<div class="cards">
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+						<div class="cards__card">
+							<a href="#" class="cards__card-wrap-img wrap-lazy-load-image">
+								<img src="https://placehold.co/255x368" loading="lazy" alt="">
+								<span class="sk-spinner-pulse"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<section class="block-info">
+					<div class="n_container">
+						<h2 class="n_sec-title">Looking for a High Class Amsterdam Escort</h2>
+						<div class="block-info__desc">
+							<p>The High-class Amsterdam escort is a premium escort. She is both beautiful and intelligent, she is every mans dream girl. At Dollhouse Amsterdam Escorts we have many high-class escorts who are ready to amaze you. They are ideally suited for almost any occasion, whether it's a dinner date, corporate events or a night on the town. Most of our high-class escorts speak multiple languages and have diverse backgrounds. When you are looking for the best, then the high-class Amsterdam escort is your only choice.</p>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+		</main>
+		<footer class="footer">
+    <div class="n_container">
+        <div class="footer__blockLogo">
+            <img src="images/svg/footer-logo.svg" alt="">
+        </div>
+        <div class="footer__block-text">
+            <p>Dollhouse Executive Escort Amsterdam was established in 2015 to cater for the business traveler looking for high-class escorts in Amsterdam at reasonable prices.<br> We provide beautiful girls to hotels and private homes in and near Amsterdam.</p>
+            <p>Our service is professional, private and accommodating. We place a high value on return customers which sets us apart from the mainstream Amsterdam escort agencies. Our escorts are handpicked and chosen for their abilities to satisfy the needs of the executive traveler. Poised, elegant and restrained during public engagements.</p>
+        </div>
+        <nav class="footer__nav first-no-link">
+            <ul>
+                <li class="menu-item no-link">Copyright 2026 - Dollhouse</li>
+                <li class="menu-item">
+                    <a href="#">Terms & conditions</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+	</div>
+	
+   <script src="files/noUiSlider/nouislider.min.js?_v=20260630163956"></script>
+   <script src="files/noUiSlider/init.js?_v=20260630163956"></script>
+   <script src="js/script.min.js?_v=20260630163956"></script>
+   <script src="files/js/filters.js?_v=20260630163956"></script>
+
+</body>
+</html>
