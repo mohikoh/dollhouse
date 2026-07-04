@@ -1078,7 +1078,7 @@ html {
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 140px);
   overflow: hidden;
 }
 
@@ -3029,7 +3029,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
   color: inherit;
 }
 
-.main.my-forms {
+.main.my-forms,
+.main.profile {
   background-color: #fff;
 }
 
@@ -3121,6 +3122,97 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .profile-menu li.menu-item a {
   color: inherit;
   text-decoration: none;
+}
+
+.profile__content {
+  padding-bottom: 59px;
+  padding-top: 37px;
+}
+
+.profile__form {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px 28px 32px;
+}
+
+.profile__form-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.8);
+  display: table;
+  font-family: "Onest", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 19px;
+}
+
+.profile__form-desc {
+  padding-bottom: 10px;
+}
+
+.profile__form-desc p {
+  font-family: "Onest", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+}
+
+.profile__form-desc p:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.profile__form label {
+  display: table;
+  font-family: "Onest", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 10px 0 5px;
+}
+
+.profile__form input {
+  background-color: #fff;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  height: 36px;
+  margin: 0;
+  padding-left: 14px;
+  padding-right: 14px;
+  width: 220px;
+}
+
+.profile__form input::-moz-placeholder {
+  color: inherit;
+}
+
+.profile__form input::placeholder {
+  color: inherit;
+}
+
+.profile__form .wrap-change-pass {
+  padding-top: 9px;
+}
+
+.profile__form .wrap-change-pass a {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Onest", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: underline;
+}
+
+.profile__form .n_btn {
+  margin-top: 23px;
+  width: 118px;
 }
 
 /* Page - About me */
@@ -4198,6 +4290,356 @@ body._touch .header .menu__list > li._active .menu__arrow {
   display: table;
 }
 
+/* Page - Price */
+
+.main.price {
+  background-color: #fff;
+}
+
+.price__content {
+  padding-bottom: 59px;
+  padding-top: 54px;
+}
+
+.price__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  text-align: center;
+}
+
+.price__table {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 10px 4px;
+  margin: 19px auto 0;
+  padding: 21px 28px 25px;
+}
+
+.price__table .spacer-row {
+  height: 5px;
+}
+
+.price__table .spacer-row td {
+  background: none !important;
+  padding: 0;
+}
+
+.price__table th,
+.price__table td {
+  text-align: center;
+}
+
+.price__table th {
+  border-bottom: 1px solid #999;
+  font-family: "Onest", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 3px;
+}
+
+.price__table td {
+  background-color: rgba(238, 241, 247, 0.5);
+  border-radius: 5px;
+  font-family: "Onest", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px 16px;
+}
+
+.price__table td strong {
+  font-weight: 800;
+}
+
+/* Page - Fill up the account */
+
+.main.fill-up-account {
+  background-color: #fff;
+}
+
+.fill-up-account__content {
+  padding-bottom: 80px;
+  padding-top: 47px;
+}
+
+.tabs {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px;
+  max-width: 100%;
+}
+
+.tabs__wrap-tab {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  display: flex;
+}
+
+.tabs.tabs--big-active {
+  width: 578px;
+  max-width: 100%;
+}
+
+.tabs .tab {
+  background-color: #F6F8FB;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  line-height: normal;
+  padding: 9px 20px 10px;
+  text-align: center;
+}
+
+.tabs .tab:first-child {
+  border-top-left-radius: 8px;
+}
+
+.tabs .tab:last-child {
+  border-top-right-radius: 8px;
+}
+
+.tabs .tab:not(:first-child) {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.tabs .tab.small-width {
+  width: 118px;
+}
+
+.tabs .tab.big-width {
+  width: calc(100% - 118px);
+}
+
+.tabs .tab.tab-active {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.tabs .tab__title {
+  color: rgba(0, 0, 0, 0.8);
+  display: table;
+  font-family: "Onest", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.tabs .tab__title::after {
+  background-color: #999;
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 1px;
+  width: 115%;
+}
+
+.tabs .tabContent {
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0s ease 0s;
+  visibility: hidden;
+}
+
+.tabs .tabContent.content-active {
+  height: auto;
+  padding: 23px 29px 15px;
+  pointer-events: all;
+  opacity: 1;
+  transition: opacity 0.1s ease 0s;
+  visibility: visible;
+}
+
+.tabs .tabContent.content-active p {
+  font-family: "Onest", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  margin: 20px 0 0;
+}
+
+.tabs .tabContent.content-active .filter-block__checkboxs {
+  padding-bottom: 9px;
+  padding-top: 9px;
+}
+
+.tabs .tabContent.content-active .filter-block__checkboxs .filter-block__wrap-checkbox {
+  margin: 0 0 10px;
+  padding-left: 33px;
+}
+
+.tabs .tabContent.content-active .filter-block__checkboxs .filter-block__wrap-checkbox input {
+  top: 4px;
+}
+
+.tabs .tabContent.content-active .filter-block__checkboxs .filter-block__wrap-checkbox label {
+  color: #000;
+}
+
+.tabs__items {
+  margin-bottom: 28px;
+  margin-top: 11px;
+}
+
+.tabs__item {
+  width: 100%;
+}
+
+.tabs__item:first-child .tabs__column:nth-child(1) {
+  width: calc(55% - 30px);
+}
+
+.tabs__item:first-child .tabs__column:nth-child(1) label,
+.tabs__item:first-child .tabs__column:nth-child(1) input {
+  text-align: left;
+}
+
+.tabs__item:first-child .tabs__column:nth-child(2) {
+  width: calc(45% - 30px);
+}
+
+.tabs__columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.tabs__column {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(50% - 20px);
+}
+
+.tabs__column.questionnaire input {
+  border-bottom: 2px solid #000;
+}
+
+.tabs__column.amount .wrap-field {
+  align-items: flex-end;
+  display: flex;
+  color: #000;
+  font-family: "Onest", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  width: 65px;
+}
+
+.tabs__column.amount::after {
+  background-color: #000;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: relative;
+  width: 56px;
+}
+
+.tabs__column label {
+  color: #000;
+  display: block;
+  font-family: "Onest", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tabs__column input {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: #000;
+  font-family: "Onest", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.tabs__column input::-moz-placeholder {
+  color: inherit;
+}
+
+.tabs__column input::placeholder {
+  color: inherit;
+}
+
+.tabs .n_btn {
+  margin: 7px 0 0 0;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 90px;
+}
+
+.input-wrapper input {
+  opacity: 0;
+}
+
+.input-wrapper .cells-container {
+  align-items: center;
+  bottom: 25px;
+  display: flex;
+  gap: 2px;
+  position: relative;
+  pointer-events: none;
+}
+
+.input-wrapper .cell,
+.input-wrapper .colon {
+  color: #000;
+  font-family: "Onest", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input-wrapper .cell {
+  align-items: center;
+  border-bottom: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  height: 27px;
+  flex: 0 0 24px;
+  position: relative;
+  width: 24px;
+}
+
+.input-wrapper .colon {
+  margin-top: -4px;
+}
+
+.cell.focused::after {
+  animation: blink 1s infinite;
+  color: #000;
+  content: "|";
+  position: absolute;
+  right: 9px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 /* Footer */
 
 .footer {
@@ -4284,6 +4726,14 @@ html.dark .place-form__block textarea,
 html.dark .place-form__field.price,
 html.dark .custom-select-options li.is-selected,
 html.dark .custom-select-options li:hover,
+html.dark .price__table,
+html.dark .filter-block__block-label,
+html.dark .tabContent.content-active,
+html.dark .filter-block__checkboxs.custom-checkboxs input[type=checkbox]:checked::before,
+html.dark .tabs .tab.tab-active,
+html.dark .profile__form,
+html.dark .profile__form input,
+html.dark .tabs .filter-block__checkboxs.custom-checkboxs input:not(:checked)::before,
 html.dark .filter-block__checkboxs.custom-checkboxs.big-checkbox input[type=checkbox]:not(:checked)::before {
   background-color: #333 !important;
 }
@@ -4331,8 +4781,11 @@ html.dark .header__wrapper::after {
 html.dark .block_bg-white,
 html.dark .auestions,
 html.dark .main.my-forms,
+html.dark .main.profile,
 html.dark .main.page-about-me,
 html.dark .about-me__price p span,
+html.dark .main.price,
+html.dark .main.fill-up-account,
 html.dark .page-profile .footer {
   background-color: #000;
 }
@@ -4377,6 +4830,18 @@ html.dark .about-me__price p span,
 html.dark .about-me__contacts-column-wrap-info p,
 html.dark .about-me__contacts-column-wrap-info address,
 html.dark .about-me__wrap-buttons a:not(.n_btn),
+html.dark .price__table th,
+html.dark .price__table td,
+html.dark .tabs .tab__title,
+html.dark .tabs__column.amount .wrap-field,
+html.dark .tabs__column input,
+html.dark .input-wrapper .cell,
+html.dark .input-wrapper .colon,
+html.dark .cell.focused::after,
+html.dark .profile__form-desc p,
+html.dark .profile__form label,
+html.dark .profile__form .wrap-change-pass a,
+html.dark .tabs .tabContent.content-active p,
 html.dark .place-form__block-table-row-name {
   color: rgba(255, 255, 255, 0.8) !important;
 }
@@ -4415,6 +4880,10 @@ html.dark .page-profile__tile.post-a-profile span,
 html.dark .place-form__block-info p strong,
 html.dark .about-me__price-top,
 html.dark .about-me__contacts-column-wrap-info p strong,
+html.dark .price__table td strong,
+html.dark .tabs .tab.tab-active,
+html.dark .tabs__column label,
+html.dark .tabs .tabContent.content-active .filter-block__checkboxs .filter-block__wrap-checkbox label,
 html.dark .wrap-profile-menu .wrap-message-and-balance .wrap-balance p strong {
   color: #fff !important;
 }
@@ -4464,11 +4933,6 @@ html.dark .filter-block__checkboxs.custom-checkboxs input[type=checkbox]:checked
   border-color: #333;
 }
 
-html.dark .filter-block__block-label,
-html.dark .filter-block__checkboxs.custom-checkboxs input[type=checkbox]:checked::before {
-  background-color: #333;
-}
-
 html.dark .language-list,
 html.dark .header .menu__sub-list::before,
 html.dark .filter-block__block {
@@ -4498,6 +4962,9 @@ html.dark .profile-menu li.menu-item.current_page_item {
 html.dark .page-profile__tile,
 html.dark .place-form__block,
 html.dark .place-form__block textarea,
+html.dark .price__table,
+html.dark .profile__form,
+html.dark .profile__form input,
 html.dark .page-profile .footer {
   border-color: rgba(255, 255, 255, 0.15);
 }
@@ -4554,16 +5021,18 @@ html.dark .place-form__block-list-value input:not([type=checkbox]) {
 
 html.dark .wrap-profile-menu .wrap-message-and-balance .wrap-balance p,
 html.dark .place-form__block input:not([type=checkbox]),
+html.dark .tabs .tab,
 html.dark .place-form__block textarea {
   color: rgba(255, 255, 255, 0.5);
 }
 
-html.dark .wrap-profile-menu .wrap-message-and-balance .wrap-balance p::-moz-placeholder, html.dark .place-form__block input:not([type=checkbox])::-moz-placeholder, html.dark .place-form__block textarea::-moz-placeholder {
+html.dark .wrap-profile-menu .wrap-message-and-balance .wrap-balance p::-moz-placeholder, html.dark .place-form__block input:not([type=checkbox])::-moz-placeholder, html.dark .tabs .tab::-moz-placeholder, html.dark .place-form__block textarea::-moz-placeholder {
   color: inherit;
 }
 
 html.dark .wrap-profile-menu .wrap-message-and-balance .wrap-balance p::placeholder,
 html.dark .place-form__block input:not([type=checkbox])::placeholder,
+html.dark .tabs .tab::placeholder,
 html.dark .place-form__block textarea::placeholder {
   color: inherit;
 }
@@ -4573,6 +5042,7 @@ html.dark .custom-select-options,
 html.dark .place-form__block input:not([type=checkbox]),
 html.dark .choose-a-photo .remove-photo-btn,
 html.dark .choose-a-photo,
+html.dark .tabs .tab,
 html.dark .filter-block__checkboxs.custom-checkboxs.big-checkbox input:checked::before {
   background-color: #1A1A1A;
 }
@@ -4635,6 +5105,49 @@ html.dark .about-me__wrap-buttons a:not(.n_btn) {
   border-color: #414246;
 }
 
+html.dark .price__table th {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+html.dark .price__table td {
+  background-color: rgba(26, 26, 26, 0.5);
+}
+
+html.dark .tabs .tab,
+html.dark .tabs__wrap-tab {
+  border: none !important;
+}
+
+html.dark .tabs .tabContent.content-active {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+html.dark .tabs .filter-block__checkboxs.custom-checkboxs input:not(:checked)::before {
+  border-color: rgba(231, 231, 231, 0.6) !important;
+}
+
+html.dark .tabs .filter-block__checkboxs.custom-checkboxs input:checked::before {
+  background-color: #6B6B6B !important;
+  border-color: #6B6B6B !important;
+}
+
+html.dark .tabs__column.questionnaire input,
+html.dark .input-wrapper .cell {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+html.dark .tabs__column.amount::after {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+html.dark .profile__form-title {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+html.dark .profile__form input {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 @media screen and (min-width: 481px) {
   .about-me__list-services {
     display: flex;
@@ -4695,6 +5208,45 @@ html.dark .about-me__wrap-buttons a:not(.n_btn) {
     max-width: 420px;
     margin: 20px;
     width: calc(50% - 40px);
+  }
+
+  .tabs .tabContent.content-active .filter-block__checkboxs .filter-block__wrap-checkbox label {
+    font-size: 16px;
+  }
+
+  .tabs__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 23px;
+    margin-top: 15px;
+  }
+
+  .tabs__item:nth-child(1) {
+    width: 55%;
+  }
+
+  .tabs__item:nth-child(2) {
+    width: 45%;
+  }
+
+  .tabs__column.amount .wrap-field {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tabs__column.amount::after {
+    left: -8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tabs__column label {
+    text-align: center;
+  }
+
+  .input-wrapper {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -5574,6 +6126,10 @@ html.dark .about-me__wrap-buttons a:not(.n_btn) {
 }
 
 @media screen and (max-width: 1024px) {
+  .wrapper {
+    min-height: calc(100vh - 121px);
+  }
+
   .n_container,
   .n_container-no-sidebar {
     /*padding-left: 40px;
@@ -5744,6 +6300,10 @@ html.dark .about-me__wrap-buttons a:not(.n_btn) {
 }
 
 @media screen and (max-width: 720.98px) {
+  .wrapper {
+    min-height: calc(100vh - 93px);
+  }
+
   .n_container,
   .n_container-no-sidebar {
     padding-left: 12px;
@@ -5916,6 +6476,11 @@ html.dark .about-me__wrap-buttons a:not(.n_btn) {
   .profile-menu li.menu-item {
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .profile__content {
+    padding-bottom: 59px;
+    padding-top: 40px;
   }
 
   .main.page-about-me {
@@ -6202,6 +6767,15 @@ html.dark .about-me__wrap-buttons a:not(.n_btn) {
   .filter-block__checkboxs.custom-checkboxs.big-checkbox.four-column .filter-block__wrap-checkbox {
     width: calc(25% - 20px) !important;
   }
+
+  .price__content {
+    padding-top: 34px;
+  }
+
+  .fill-up-account__content {
+    padding-bottom: 59px;
+    padding-top: 37px;
+  }
 }
 
 @media screen and (max-width: 720.98px) and (max-width: 720.98px) {
@@ -6381,6 +6955,56 @@ html.dark .about-me__wrap-buttons a:not(.n_btn) {
     width: calc(42% - 20px);
   }
 
+  .price__table {
+    padding: 24px 25px 21px;
+  }
+
+  .price__table td {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .tabs .tab__title::after {
+    width: 100%;
+  }
+
+  .tabs .tabContent.content-active {
+    padding: 33px 28px 9px;
+  }
+
+  .tabs .tabContent.content-active p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 17px 0 10px;
+  }
+
+  .tabs .tabContent.content-active .filter-block__checkboxs .filter-block__wrap-checkbox input {
+    top: 5px;
+  }
+
+  .tabs__item:nth-child(2) {
+    margin-top: 17px;
+  }
+
+  .tabs__columns {
+    margin-left: -26px;
+    margin-right: -26px;
+  }
+
+  .tabs__column {
+    margin-left: 26px;
+    margin-right: 26px;
+    width: calc(50% - 52px) !important;
+  }
+
+  .tabs__column input {
+    margin-top: 2px;
+  }
+
+  .tabs .n_btn {
+    width: 118px;
+  }
+
   .footer {
     padding-bottom: 37px;
     padding-top: 51px;
@@ -6455,6 +7079,19 @@ html.dark .about-me__wrap-buttons a:not(.n_btn) {
 
   .filter-block__block.parameters .filter-block__checkboxs .filter-block__wrap-checkbox {
     width: calc(50% - 30px) !important;
+  }
+}
+
+@media screen and (max-width: 400.98px) {
+  .price__table {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+
+  .price__table td {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
