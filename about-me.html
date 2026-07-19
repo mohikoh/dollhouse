@@ -4,11 +4,11 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="files/js/dark-mode.js?_v=20260705004639"></script>
-   <link rel="stylesheet" href="files/noUiSlider/nouislider.min.css?_v=20260705004639">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260705004639">
-   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20260705004639">
-   <link rel="stylesheet" href="css/style.min.css?_v=20260705004639">
+   <script src="files/js/dark-mode.js?_v=20260719203044"></script>
+   <link rel="stylesheet" href="files/noUiSlider/nouislider.min.css?_v=20260719203044">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260719203044">
+   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20260719203044">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260719203044">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>About me - Doll House</title>
 </head>
@@ -36,7 +36,7 @@
 								<a href="#">Top 100</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Contact us</a>
+								<a href="#contact-us" class="popup-link">Contact us</a>
 							</li>
 
 							<!--
@@ -114,7 +114,7 @@
                <a href="#">Prices</a>
             </li>
             <li class="menu-item">
-               <a href="#">Contacts</a>
+               <a href="#contact-us" class="popup-link">Contacts</a>
             </li>
          </ul>
       </nav>
@@ -124,7 +124,8 @@
          <div class="n_container">
 
             <div class="about-me">
-               <div class="about-me__items">
+
+               <div id="about-me-items" class="about-me__items">
                   <div class="about-me__item">
                      <div class="about-me__wrap-slider">
                         <div id="big-slider" class="about-me__big-slider">
@@ -187,7 +188,7 @@
                            </div>
                         </div>
                         <div class="about-me__wrap-buttons">
-                           <a href="#" class="n_btn chat">
+                           <a href="#" class="n_btn chat open-contact-block">
                               <div class="wrap-icon">
                                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
                                     <path d="M0 0h24v24H0z" fill="none" />
@@ -535,11 +536,81 @@
                      </div>
                   </div>
                </div>
+
+               <div id="about-me-contact-block" class="about-me__contact-block hidden">
+                  <div class="about-me__contact-block-left">
+                     <div class="about-me__contact-block-wrap-image">
+                        <div class="about-me__contact-block-image">
+                           <img class="photo" src="images/slide-1.jpg" alt="">
+                           <div class="about-me__contact-block-wrap-icons">
+                              <div class="about-me__contact-block-wrap-icon">
+                                 <img src="images/svg/about-me-contact-icon-top100.svg" alt="">
+                              </div>
+                              <div class="about-me__contact-block-wrap-icon">
+                                 <img src="images/svg/about-me-contact-icon-vip.svg" alt="">
+                              </div>
+                              <div class="about-me__contact-block-wrap-icon">
+                                 <img src="images/svg/about-me-contact-icon-silver.svg" alt="">
+                              </div>
+                              <div class="about-me__contact-block-wrap-icon">
+                                 <img src="images/svg/about-me-contact-icon-100p-real.svg" alt="">
+                              </div>
+                           </div>
+                        </div>
+                        <a id="about-me-close-contact-block" href="#" class="about-me__close-contact-block n_btn">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M17.0711 15.3033L4.69672 2.92896L2.92895 4.69672L15.3033 17.0711L17.0711 15.3033Z" fill="white"/>
+                              <path d="M15.3033 2.92898L2.92896 15.3033L4.69672 17.0711L17.0711 4.69674L15.3033 2.92898Z" fill="white"/>
+                           </svg>
+                           Close
+                        </a>
+                     </div>
+                  </div>
+                  <div class="about-me__contact-block-right">
+                     <div class="about-me__contact-right-block">
+                        <h2 class="about-me__contact-block-title">Phone</h2>
+                        <div class="about-me__contact-block-culumns">
+                           <div class="about-me__contact-block-culumn">
+                              <a href="tel:+380644663210" class="phone">06 44 66 32 10</a>
+                           </div>
+                           <div class="about-me__contact-block-culumn">
+                              <ul>
+                                 <li>
+                                    <a href="#">
+                                       <div class="wrap-icon">
+                                          <img src="images/svg/about-me-contact-icon-sms.svg" alt="">
+                                       </div>
+                                       SMS
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#">
+                                       <div class="wrap-icon">
+                                          <img src="images/svg/about-me-contact-icon-whatsapp.svg" alt="">
+                                       </div>
+                                       WhatsApp
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="about-me__contact-right-block">
+                        <h2 class="about-me__contact-block-title">Private message</h2>
+                        <form class="about-me__contact-block-form">
+                           <textarea placeholder="Enter your text"></textarea>
+                           <button type="submit" class="n_btn">Send</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+
             </div>
 
          </div>
 
 		</main>
+
 		<footer class="footer">
    <div class="n_container full-hd">
       <nav class="footer__nav first-no-link">
@@ -555,15 +626,121 @@
       </nav>
    </div>
 </footer>
+
+<div id="contact-us" class="popup contact-form-popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <a href="" class="popup__close close-popup">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M17.0711 15.3033L4.69678 2.92896L2.92901 4.69672L15.3034 17.0711L17.0711 15.3033Z" fill="black" fill-opacity="0.8"/>
+               <path d="M15.3031 2.92892L2.92871 15.3033L4.69648 17.0711L17.0708 4.69668L15.3031 2.92892Z" fill="black" fill-opacity="0.8"/>
+            </svg>
+         </a>
+         <h2 class="popup__title">Contacts</h2>
+         <form class="popup__form contact">
+            <div class="contact-form-popup__wrap-fields">
+               <div class="contact-form-popup__wrap-field">
+                  <label for="your-name">Your Name*</label>
+                  <input type="text" placeholder="Your Name" id="your-name">
+               </div>
+               <div class="contact-form-popup__wrap-field">
+                  <label for="email">Email*</label>
+                  <input type="text" placeholder="example.com" id="email">
+               </div>
+            </div>
+            <div class="contact-form-popup__wrap-field">
+               <label for="subject">Subject*</label>
+               <input type="text" placeholder="Subject" id="subject">
+            </div>
+            <div class="contact-form-popup__wrap-field">
+               <label for="body">Body*</label>
+               <textarea id="body" placeholder="Your message" class="contact-form-popup__textarea"></textarea>
+            </div>
+            <button type="submit" class="contact-form-popup__submit n_btn">Send</button>
+         </form>
+      </div>
+   </div>
+</div>
 	</div>
 
-	<script src="files/swiper/js/swiper-bundle.min.js?_v=20260705004639"></script>
-   <script src="files/swiper/js/init.js?_v=20260705004639"></script>
-	
-   <script src="js/script.min.js?_v=20260705004639"></script>
+   <div class="wrap-bottom-icons">
+      <div class="n_container">
+         <div class="wrap-bottom-icons__columns">
+            <a class="wrap-bottom-icons__column bg-color-whatsapp" href="#">
+               <svg width="29" height="29" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="nonzero" d="M7.253 18.494l.724.423A7.953 7.953 0 0 0 12 20a8 8 0 1 0-8-8c0 1.436.377 2.813 1.084 4.024l.422.724-.653 2.401 2.4-.655zM2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308c.134-.01.269-.01.403-.004.054.004.108.01.162.016.159.018.334.115.393.249.298.676.588 1.357.868 2.04.062.152.025.347-.093.537a4.38 4.38 0 0 1-.263.372c-.113.145-.356.411-.356.411s-.099.118-.061.265c.014.056.06.137.102.205l.059.095c.256.427.6.86 1.02 1.268.12.116.237.235.363.346.468.413.998.75 1.57 1l.005.002c.085.037.128.057.252.11.062.026.126.049.191.066a.35.35 0 0 0 .367-.13c.724-.877.79-.934.796-.934v.002a.482.482 0 0 1 .378-.127c.06.004.121.015.177.04.531.243 1.4.622 1.4.622l.582.261c.098.047.187.158.19.265.004.067.01.175-.013.373-.032.259-.11.57-.188.733a1.155 1.155 0 0 1-.21.302 2.378 2.378 0 0 1-.33.288 3.71 3.71 0 0 1-.125.09 5.024 5.024 0 0 1-.383.22 1.99 1.99 0 0 1-.833.23c-.185.01-.37.024-.556.014-.008 0-.568-.087-.568-.087a9.448 9.448 0 0 1-3.84-2.046c-.226-.199-.435-.413-.649-.626-.89-.885-1.562-1.84-1.97-2.742A3.47 3.47 0 0 1 6.9 9.62a2.729 2.729 0 0 1 .564-1.68c.073-.094.142-.192.261-.305.127-.12.207-.184.294-.228a.961.961 0 0 1 .371-.1z" fill="#FFFFFF"/>
+               </svg>
+               <span>WhatsApp</span>
+            </a>
+            <a class="wrap-bottom-icons__column bg-color-viber" href="#">
+               <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                  <path d="M12.743 13.455s.356.03.547-.206l.374-.47c.18-.232.614-.38 1.04-.144a11.005 11.005 0 0 1 .928.593c.282.207.86.69.862.69.276.233.34.574.152.934l-.002.008a3.896 3.896 0 0 1-.777.957l-.007.005q-.401.335-.789.381a.522.522 0 0 1-.115.008 1.05 1.05 0 0 1-.335-.052l-.009-.012c-.398-.113-1.062-.394-2.169-1.004a12.917 12.917 0 0 1-1.822-1.204 9.553 9.553 0 0 1-.82-.727l-.027-.027-.028-.028-.028-.027-.027-.028a9.553 9.553 0 0 1-.727-.82A12.93 12.93 0 0 1 7.76 10.46c-.61-1.107-.891-1.77-1.004-2.17l-.012-.008a1.05 1.05 0 0 1-.051-.335.506.506 0 0 1 .007-.115q.048-.387.382-.79l.005-.007a3.888 3.888 0 0 1 .957-.777l.007-.001c.36-.188.702-.124.934.15.002.001.484.58.69.862a11.005 11.005 0 0 1 .593.929c.237.425.089.86-.144 1.04l-.47.373c-.237.192-.206.548-.206.548s.696 2.633 3.295 3.296zm-.878-7.875a.253.253 0 0 0-.256.252.253.253 0 0 0 .252.254c1.353.01 2.454.447 3.356 1.326.894.872 1.351 2.057 1.363 3.611a.253.253 0 0 0 .254.252.253.253 0 0 0 .252-.255c-.013-1.654-.517-2.996-1.516-3.97-.99-.965-2.242-1.46-3.705-1.47Zm.463 1.313a.253.253 0 0 0-.271.234.253.253 0 0 0 .234.271c.966.071 1.682.387 2.205.957.524.573.773 1.27.754 2.141a.253.253 0 0 0 .248.258.253.253 0 0 0 .258-.246c.021-.978-.276-1.827-.887-2.494-.617-.674-1.48-1.044-2.54-1.121Zm.379 1.357a.253.253 0 0 0-.266.24.253.253 0 0 0 .239.266c.436.023.73.146.93.351.198.206.32.516.343.971a.253.253 0 0 0 .264.24.253.253 0 0 0 .24-.263c-.027-.537-.18-.984-.484-1.3-.305-.314-.743-.478-1.266-.505Zm6.636-4.3c-.497-.458-2.506-1.916-6.98-1.936 0 0-5.275-.318-7.847 2.041-1.431 1.432-1.935 3.527-1.988 6.125-.053 2.597-.122 7.465 4.57 8.785h.005L7.1 20.98s-.03.815.507.981c.65.202 1.03-.418 1.65-1.086.341-.367.811-.905 1.165-1.317 3.21.27 5.678-.347 5.958-.439.648-.21 4.315-.68 4.91-5.547.616-5.017-.297-8.19-1.947-9.621Zm.544 9.262c-.504 4.064-3.478 4.32-4.026 4.496-.233.075-2.401.614-5.127.436 0 0-2.031 2.45-2.666 3.088-.099.1-.215.14-.293.12-.11-.027-.14-.156-.138-.345l.017-3.347s-.002 0 0 0c-3.97-1.102-3.738-5.246-3.693-7.415.045-2.17.453-3.947 1.664-5.143C7.8 3.132 12.28 3.426 12.28 3.426c3.784.017 5.598 1.157 6.018 1.538 1.396 1.196 2.108 4.056 1.588 8.247z" fill="#FFFFFF" stroke-width="0.0300125"/>
+               </svg>
+               <span>Viber</span>
+            </a>
+            <a class="wrap-bottom-icons__column bg-color-sms open-contact-block" href="#">
+               <svg style="margin-bottom:-1px;" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 3C5.11765 3 3 4.64706 3 10C3 13.7383 4.0328 15.6692 7 16.4939V21L11.0124 16.9876C11.3301 16.996 11.6592 17 12 17C18.8824 17 21 15.3529 21 10C21 4.64706 18.8824 3 12 3Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>
+               <span>Sms</span>
+            </a>
+            <a class="wrap-bottom-icons__column bg-color-call" href="#">
+               <svg style="margin-bottom:3px;margin-top:4px;" width="22" height="22" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                  <g transform="translate(-103.000000, -7321.000000)">
+                     <g transform="translate(56.000000, 160.000000)">
+                        <path fill="#FFFFFF" d="M61.7302966,7173.99596 C61.2672966,7175.40296 59.4532966,7176.10496 58.1572966,7175.98796 C56.3872966,7175.82796 54.4612966,7174.88896 52.9992966,7173.85496 C50.8502966,7172.33496 48.8372966,7169.98396 47.6642966,7167.48896 C46.8352966,7165.72596 46.6492966,7163.55796 47.8822966,7161.95096 C48.3382966,7161.35696 48.8312966,7161.03996 49.5722966,7161.00296 C50.6002966,7160.95296 50.7442966,7161.54096 51.0972966,7162.45696 C51.3602966,7163.14196 51.7112966,7163.84096 51.9072966,7164.55096 C52.2742966,7165.87596 50.9912966,7165.93096 50.8292966,7167.01396 C50.7282966,7167.69696 51.5562966,7168.61296 51.9302966,7169.09996 C52.6632966,7170.05396 53.5442966,7170.87696 54.5382966,7171.50296 C55.1072966,7171.86196 56.0262966,7172.50896 56.6782966,7172.15196 C57.6822966,7171.60196 57.5872966,7169.90896 58.9912966,7170.48196 C59.7182966,7170.77796 60.4222966,7171.20496 61.1162966,7171.57896 C62.1892966,7172.15596 62.1392966,7172.75396 61.7302966,7173.99596 C61.4242966,7174.92396 62.0362966,7173.06796 61.7302966,7173.99596"></path>
+                     </g>
+                  </g>
+               </svg>
+               <span>Call me</span>
+            </a>
+         </div>
+      </div>
+   </div>
 
-   <script src="files/fancybox/fancybox.umd.js?_v=20260705004639"></script>
-   <script src="files/fancybox/fancybox.init.js?_v=20260705004639"></script>
+	<script src="files/swiper/js/swiper-bundle.min.js?_v=20260719203044"></script>
+   <script src="files/swiper/js/init.js?_v=20260719203044"></script>
+	
+   <script src="js/script.min.js?_v=20260719203044"></script>
+
+   <script src="files/fancybox/fancybox.umd.js?_v=20260719203044"></script>
+   <script src="files/fancybox/fancybox.init.js?_v=20260719203044"></script>
+   
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         const contactBlock = document.getElementById('about-me-contact-block');
+         const itemsBlock = document.getElementById('about-me-items');
+
+         const openButtons = document.querySelectorAll('.open-contact-block');
+         const closeButton = document.getElementById('about-me-close-contact-block');
+
+         function showContactBlock(e) {
+            if (e) e.preventDefault();
+            if (!contactBlock || !itemsBlock) return;
+
+            contactBlock.classList.remove('hidden');
+            itemsBlock.classList.add('hidden');
+         }
+
+         function hideContactBlock(e) {
+            if (e) e.preventDefault();
+            if (!contactBlock || !itemsBlock) return;
+
+            contactBlock.classList.add('hidden');
+            itemsBlock.classList.remove('hidden');
+         }
+
+         if (openButtons.length) {
+            openButtons.forEach(function (btn) {
+               btn.addEventListener('click', showContactBlock);
+            });
+         }
+
+         if (closeButton) {
+            closeButton.addEventListener('click', hideContactBlock);
+         }
+      });
+   </script>
 
 </body>
 </html>

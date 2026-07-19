@@ -4,11 +4,11 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="files/js/dark-mode.js?_v=20260705004639"></script>
-   <link rel="stylesheet" href="files/noUiSlider/nouislider.min.css?_v=20260705004639">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260705004639">
-   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20260705004639">
-   <link rel="stylesheet" href="css/style.min.css?_v=20260705004639">
+   <script src="files/js/dark-mode.js?_v=20260719203044"></script>
+   <link rel="stylesheet" href="files/noUiSlider/nouislider.min.css?_v=20260719203044">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260719203044">
+   <link rel="stylesheet" href="files/fancybox/fancybox.css?_v=20260719203044">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260719203044">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>Fill up the account - Doll House</title>
 </head>
@@ -32,7 +32,7 @@
 								<a href="#">Top 100</a>
 							</li>
 							<li class="menu-item">
-								<a href="#">Contact us</a>
+								<a href="#contact-us" class="popup-link">Contact us</a>
 							</li>
 
 							
@@ -216,12 +216,47 @@
       </nav>
    </div>
 </footer>
+
+<div id="contact-us" class="popup contact-form-popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <a href="" class="popup__close close-popup">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M17.0711 15.3033L4.69678 2.92896L2.92901 4.69672L15.3034 17.0711L17.0711 15.3033Z" fill="black" fill-opacity="0.8"/>
+               <path d="M15.3031 2.92892L2.92871 15.3033L4.69648 17.0711L17.0708 4.69668L15.3031 2.92892Z" fill="black" fill-opacity="0.8"/>
+            </svg>
+         </a>
+         <h2 class="popup__title">Contacts</h2>
+         <form class="popup__form contact">
+            <div class="contact-form-popup__wrap-fields">
+               <div class="contact-form-popup__wrap-field">
+                  <label for="your-name">Your Name*</label>
+                  <input type="text" placeholder="Your Name" id="your-name">
+               </div>
+               <div class="contact-form-popup__wrap-field">
+                  <label for="email">Email*</label>
+                  <input type="text" placeholder="example.com" id="email">
+               </div>
+            </div>
+            <div class="contact-form-popup__wrap-field">
+               <label for="subject">Subject*</label>
+               <input type="text" placeholder="Subject" id="subject">
+            </div>
+            <div class="contact-form-popup__wrap-field">
+               <label for="body">Body*</label>
+               <textarea id="body" placeholder="Your message" class="contact-form-popup__textarea"></textarea>
+            </div>
+            <button type="submit" class="contact-form-popup__submit n_btn">Send</button>
+         </form>
+      </div>
+   </div>
+</div>
    </div>
 
-   <script src="js/script.min.js?_v=20260705004639"></script>
+   <script src="js/script.min.js?_v=20260719203044"></script>
 
-   <script src="https://unpkg.com/imask?_v=20260705004639"></script>
-   <script src="files/js/fill-up-the-account.js?_v=20260705004639"></script>
+   <script src="https://unpkg.com/imask?_v=20260719203044"></script>
+   <script src="files/js/fill-up-the-account.js?_v=20260719203044"></script>
 
 </body>
 
