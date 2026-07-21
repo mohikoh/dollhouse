@@ -5895,6 +5895,14 @@ html.dark .about-me__contact-block-form textarea::placeholder {
   color: rgba(255, 254, 254, 0.5);
 }
 
+html.dark .filter-block__wrap-filter .filter-block__checkboxs.custom-checkboxs input:not(:checked)::before {
+  border-color: rgba(231, 231, 231, 0.2) !important;
+}
+
+html.dark .filter-block__wrap-filter .filter-block__checkboxs.custom-checkboxs input:checked::before {
+  border-color: rgb(51, 51, 51) !important;
+}
+
 @media screen and (min-width: 481px) {
   .popup__form.contact .contact-form-popup__wrap-fields {
     display: flex;
