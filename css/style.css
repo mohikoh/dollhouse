@@ -6728,6 +6728,7 @@ html.dark .filter-block__wrap-filter .filter-block__checkboxs.custom-checkboxs i
     margin-left: 40px;
     position: relative;
     flex: 0 0 32px;
+    width: 32px;
     z-index: 5;
     /*
     @include media-max-760 {
@@ -6914,6 +6915,7 @@ html.dark .filter-block__wrap-filter .filter-block__checkboxs.custom-checkboxs i
     height: 15px;
     flex: 0 0 20px;
     margin-left: 10px;
+    width: 20px;
   }
 
   .header .menu__icon span,
@@ -8128,6 +8130,18 @@ html.dark .filter-block__wrap-filter .filter-block__checkboxs.custom-checkboxs i
 
   .header__blockLogo .name-site {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 350.98px) {
+  .header__blockLogo a {
+    height: 32px;
+    min-width: 34px;
+    max-width: 34px;
+  }
+
+  .header .menu {
+    padding: 0;
   }
 }
 
